@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }} !
+</h1>
+
+<div class="column is-4 is-offset-4">
+    <div class="box">
+<!--  On user page, display some user info-->
+      <p>E-mail : {{ email }}</p>
+      <p>Flightnumber : {{ flightnumber }}</p>
+      <p>Seatnumber : {{ seatnumber }}</p>
+    </div>
+</div>
+{% endblock %}
