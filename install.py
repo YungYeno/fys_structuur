@@ -48,7 +48,7 @@ def moving_files():
     path = "fys_structuur/"
     print(f"{GREEN}\nAdding files to the wsgi folder...{WHITE}")
     commands = ["sudo mkdir /var/www/fys/corendon",
-                f"sudo mv {path}*.html {path}db.sqlite {path}requirements.txt {path}templates /var/www/fys/wsgi/",
+                f"sudo mv fys_structuur/app.py fys_structuur/auth.py fys_structuur/models.py fys_structuur/__init__.py {path}db.sqlite {path}requirements.txt {path}templates /var/www/fys/wsgi/",
                 f"sudo mv {path}corendon.conf /etc/apache2/sites-available"]
     try:
         for command in commands:
