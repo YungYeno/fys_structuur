@@ -32,15 +32,15 @@ def requirements():
         print(f"{RED}\nSomething went wrong with installing requirements! : {WHITE}{error}")
 
 
-# Clone the github project
-def get_project():
-    print(f"{GREEN}\nDownloading project files...{WHITE}")
-    command = "git clone https://github.com/YungYeno/fys_structuur.git"
-    try:
-        result = os.system(command)
-        print(result)
-    except OSError as error:
-        print(f"{RED}\nSomething went wrong with getting project files : {error}")
+# # Clone the github project
+# def get_project():
+#     print(f"{GREEN}\nDownloading project files...{WHITE}")
+#     command = "git clone https://github.com/YungYeno/fys_structuur.git"
+#     try:
+#         result = os.system(command)
+#         print(result)
+#     except OSError as error:
+#         print(f"{RED}\nSomething went wrong with getting project files : {error}")
 
 
 # Move files to proper location
