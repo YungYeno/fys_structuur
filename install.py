@@ -99,7 +99,6 @@ def outro():
 if __name__ == '__main__':
     intro()
     requirements()
-    get_project()
     moving_files()
     permissions()
     outro()
