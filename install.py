@@ -47,8 +47,7 @@ def requirements():
 def moving_files():
     path = "fys_structuur/"
     print(f"{GREEN}\nAdding files to the wsgi folder...{WHITE}")
-    commands = ["sudo mv project /var/www/fys/wsgi",
-                "sudo mkdir /var/www/fys/corendon",
+    commands = ["sudo mkdir /var/www/fys/corendon",
                 f"sudo mv {path}*.html {path}db.sqlite {path}requirements.txt {path}templates /var/www/fys/wsgi/",
                 f"sudo mv {path}corendon.conf /etc/apache2/sites-available"]
     try:
